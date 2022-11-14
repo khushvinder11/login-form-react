@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  width: 500px;
+  height: 300px;
+  box-shadow: 0px 2px 3px 2px gray;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: white;
+}
+
+.sing-up {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  text-align: center;
+}
+
+.form-left-image {
+  width: 250px;
+  height: 300px;
+}
+
+.form-left-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.form-right-content {
+  width: 250px;
+  height: auto;
+  /* padding: 13px; */
+  padding: 22px 13px 7px;
+  border-left: 1px solid rgba(126, 124, 124, 0.651);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.input-field input {
+  width: 215px;
+  height: 27px;
+  padding: 0 0 0px 26px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: rgb(70, 68, 68);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(105, 104, 104, 0.651);
+}
+
+.input-field input::placeholder {
+  font-size: 11px;
+}
+
+.check-field {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.check-field .check {
+  width: 10px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.check-remember {
+  font-size: 11px;
+  color: rgb(116, 113, 113);
+  /* color: rgba(114, 114, 240, 0.904); */
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+.form-btn-login {
+  width: 100%;
+  height: 30px;
+  background: rgb(94, 94, 224);
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-btn-login:hover {
+  background: blue;
+}
+
+/* .. */
+.user-input {
+  /* display: flex; */
+  /* align-items: center; */
+  position: relative;
+}
+
+.fa-user,
+.fa-lock {
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  font-size: 16px;
+  color: rgb(143, 140, 140);
+  cursor: pointer;
+}
+
+.fa-eye-slash,
+.fa-eye {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  font-size: 11px;
+  color: rgb(161, 158, 158);
+  cursor: pointer;
+}
+
+.fa-eye-slash:hover,
+.fa-eye:hover {
+  color: black;
+}
